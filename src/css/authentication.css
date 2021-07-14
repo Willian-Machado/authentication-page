@@ -1,0 +1,202 @@
+body {
+    height: max-content;
+    min-height: 100vh;
+    padding: 1rem 0;
+}
+
+.sign-up-area {
+    display: flex;
+
+    width: 90vw;
+    min-height: max-content;
+    max-width: 90vw;
+    margin: auto;
+
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.sign-up-area__form-area {
+    width: 100%;
+    min-width: 17rem;
+    height: 100%;
+    padding: 4rem 2rem;
+
+    background-color: white;
+    
+    border-radius: 2rem;
+}
+
+.sign-up-area__presentation {
+    padding: 1rem 0 2rem;
+    
+    text-align: center;
+}
+
+.sign-up-area__presentation p {
+    color: gray;
+    font-size: .75rem;
+}
+
+.sign-up-area__presentation h1 {
+    font-size: 1.5rem;
+}
+
+.sign-up-area__input-area label {
+    color: gray;
+    font-size: .75rem;
+    
+    cursor: pointer;
+}
+
+.sign-up-area__input-area input {
+    width: 100%;
+    margin-bottom: 2ch;
+    padding-bottom: 1ch;
+    
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.sign-up-area__password-strength-filter {
+    padding-bottom: 1em;
+}
+
+.sign-up-area__password-strength-filter h1 {
+    color: dimgray;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.sign-up-area__password-strength {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+.sign-up-area__password-strength span {
+    width: calc(100% / 7);
+    height: 5px;
+    margin: 1ch 0;
+    
+    /* background-color: hsl(160, 59%, 38%); */
+    background-color: lightgray;
+    
+    border-radius: 1rem;
+}
+
+.sign-up-area__terms-and-conditions {
+    font-size: 1ch;
+}
+
+.sign-up-area__register-action {
+    padding: 1rem 0;
+}
+
+.sign-up-area__register-action button {
+    display: block;
+    
+    width: 100%;
+    max-width: 20rem;
+    height: 2.5rem;
+    margin: auto;
+    
+    color: white;
+    font-size: 1ch;
+    text-transform: uppercase;
+    
+    background-color: hsl(220, 100%, 40%);
+    
+    border: none;
+    border-radius: 1ex;
+}
+
+.sign-up-area__nav-to-login-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    font-weight: 600;
+    font-size: .7rem;
+}
+
+.sign-up-area__nav-to-login-form > * + * {
+    color: dimgray;
+    
+    padding-top: 1rem;
+}
+
+.sign-up-area__nav-to-login-form span {
+    width: 100%;
+    
+    text-align: center;
+}
+
+.sign-up-area__nav-to-login-form span:first-child {
+    color: dimgray;
+    text-transform: uppercase;
+}
+
+.sign-up-area__nav-to-login-form>a {
+    display: flex;
+    align-items: center;
+    gap: 1ex;
+}
+
+.sign-up-area__illustration {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 5rem;
+
+    background-color: hsl(216, 62%, 97%);
+}
+
+.sign-up-area__image {
+    display: grid;
+    place-items: center;
+    
+    width: 100%;
+    height: 60%;
+}
+
+.sign-up-area__slogan {
+    width: 100%;
+    max-width: 30rem;
+    margin: auto;
+
+    text-align: center;
+}
+
+.sign-up-area__slogan * {
+    padding: .3rem 0;
+}
+
+.sign-up-area__slogan span {
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.sign-up-area__slogan h1 {
+    font-size: 2.5rem;
+}
+
+.sign-up-area__slogan p {
+    color: gray;
+    font-size: .8rem;
+    line-height: 1.7rem;
+}
+
+@media (min-width: 768px) {
+    .sign-up-area__form-area {
+        max-width: 25rem;
+    }
+    .sign-up-area__illustration {
+        display: flex;
+    }
+}
